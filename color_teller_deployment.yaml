@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: color-teller-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: color-teller
+  template:
+    metadata:
+      labels:
+        app: color-teller
+    spec:
+      containers:
+      - name: color-teller
+        image: hienlt21293/colorteller
+        env:
+        - name: COLOR
+          value: "BLUESSSS"
+        - name: PORT
+          value: "6000"
+        ports:
+        - containerPort: 6000
+        resources:
+            requests:
+              memory: "100Mi"
+              cpu: "300m"
+            limits:
+              memory: "200Mi"
+              cpu: "750m"
