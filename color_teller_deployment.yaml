@@ -17,7 +17,7 @@ spec:
         image: hienlt21293/colorteller
         env:
         - name: COLOR
-          value: "BLUESSSS"
+          value: "BLACK AND WHITE"
         - name: PORT
           value: "6000"
         ports:
