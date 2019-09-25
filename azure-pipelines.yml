@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: H74ZQN2
+  name: Default
 
 steps:
 - script: echo Hello, world!
