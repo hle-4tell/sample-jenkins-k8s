@@ -15,6 +15,6 @@ steps:
 
 - script: |
     whoami
-    echo Add other tasks to build, test, and deploy your project.
+    echo Add other tasks to build, test, and deploy your project. sdf
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
