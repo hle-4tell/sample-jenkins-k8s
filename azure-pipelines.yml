@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: myAgentPool
+  name: Default
 
 steps:
 - script: echo Hello, world!
