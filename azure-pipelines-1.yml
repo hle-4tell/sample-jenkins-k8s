@@ -20,6 +20,11 @@ steps:
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    restoreSolution: '**/4TellPipelineAutomationTestConsoleApp/*.config'
+    feedsToUse: 'select'
 - task: MSBuild@1
   inputs:
     solution: '**/4TellPipelineAutomationTestConsoleApp/*.csproj'
