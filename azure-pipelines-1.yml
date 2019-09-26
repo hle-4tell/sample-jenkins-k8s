@@ -39,6 +39,7 @@ steps:
     targetType: 'inline'
     script: | 
       dir
+      echo '==============================='
       dir 4TellPipelineAutomationTestConsoleApp
       
       echo '==============================='
