@@ -38,7 +38,7 @@ steps:
     targetType: 'inline'
     script: |     
       echo 'hello' 
-      dir
+      dir packages
 - task: MSBuild@1
   inputs:
     solution: '**/4TellPipelineAutomationTestConsoleApp/*.csproj'
