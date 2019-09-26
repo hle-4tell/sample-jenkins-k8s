@@ -31,7 +31,7 @@ steps:
   inputs:
     command: 'restore'
     restoreSolution: '**/4TellPipelineAutomationTestConsoleApp/packages.config'
-    restoreDirectory: './4TellPipelineAutomationTestConsoleApp/packages'
+    restoreDirectory: './packages'
     feedsToUse: 'select'
   
 - task: Bash@3
@@ -40,6 +40,7 @@ steps:
     script: | 
       dir
       echo '==============================='
+
       dir 4TellPipelineAutomationTestConsoleApp
       
       echo '==============================='
