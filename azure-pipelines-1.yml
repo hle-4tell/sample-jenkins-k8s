@@ -24,6 +24,7 @@ steps:
   inputs:
     command: 'restore'
     restoreSolution: '**/4TellPipelineAutomationTestConsoleApp/packages.config'
+    restoreDirectory: '**/4TellPipelineAutomationTestConsoleApp/'
     feedsToUse: 'select'
 - task: MSBuild@1
   inputs:
