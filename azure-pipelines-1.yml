@@ -20,7 +20,7 @@ steps:
   inputs:
     targetType: 'inline'
     script: |      
-      mkdir packages
+      mkdir 4TellPipelineAutomationTestConsoleApp\packages
 
 - task: NuGetCommand@2
   inputs:
@@ -30,7 +30,7 @@ steps:
   inputs:
     command: 'restore'
     restoreSolution: '**/4TellPipelineAutomationTestConsoleApp/packages.config'
-    restoreDirectory: './packages'
+    restoreDirectory: './4TellPipelineAutomationTestConsoleApp/packages'
     feedsToUse: 'select'
   
 - task: Bash@3
@@ -38,7 +38,7 @@ steps:
     targetType: 'inline'
     script: |     
       echo 'hello' 
-      dir packages
+      dir 4TellPipelineAutomationTestConsoleApp\packages
 - task: MSBuild@1
   inputs:
     solution: '**/4TellPipelineAutomationTestConsoleApp/*.csproj'
