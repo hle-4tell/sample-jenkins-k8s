@@ -39,7 +39,7 @@ steps:
     targetType: 'inline'
     script: |     
       echo 'hello' 
-      dir
+      dir 4TellPipelineAutomationTestConsoleApp
       dir 4TellPipelineAutomationTestConsoleApp/packages
 - task: MSBuild@1
   inputs:
