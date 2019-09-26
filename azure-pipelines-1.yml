@@ -20,7 +20,8 @@ steps:
   inputs:
     targetType: 'inline'
     script: |      
-      mkdir 4TellPipelineAutomationTestConsoleApp\packages
+      mkdir 4TellPipelineAutomationTestConsoleApp/packages
+      dir
 
 - task: NuGetCommand@2
   inputs:
@@ -38,7 +39,8 @@ steps:
     targetType: 'inline'
     script: |     
       echo 'hello' 
-      dir 4TellPipelineAutomationTestConsoleApp\packages
+      dir
+      dir 4TellPipelineAutomationTestConsoleApp/packages
 - task: MSBuild@1
   inputs:
     solution: '**/4TellPipelineAutomationTestConsoleApp/*.csproj'
