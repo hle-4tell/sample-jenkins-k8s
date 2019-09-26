@@ -40,8 +40,12 @@ steps:
     script: | 
       dir
       dir 4TellPipelineAutomationTestConsoleApp
+      
       echo '==============================='
       dir 4TellPipelineAutomationTestConsoleApp/packages
+
+      echo '==============================='
+      dir packages
 - task: MSBuild@1
   inputs:
     solution: '**/4TellPipelineAutomationTestConsoleApp/*.csproj'
