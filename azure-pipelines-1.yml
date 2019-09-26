@@ -37,8 +37,7 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: |     
-      cd 
+    script: | 
       dir
       dir 4TellPipelineAutomationTestConsoleApp
       dir 4TellPipelineAutomationTestConsoleApp/packages
